@@ -1,0 +1,67 @@
+// Main package
+package JavaTAPProjects;
+
+// Import packages
+import java.util.*;
+import java.lang.*;
+
+// Contact exception
+class ContactException extends Exception {
+    ContactException(String error) {
+        super(error);
+    }
+}
+
+// Phonebook interface
+interface PhonebookInterface {
+    
+    void addContact() throws ContactException;
+    void viewContact();
+    void deleteContact();
+    void replaceName();
+    
+}
+
+// Main class
+public class PhonebookController {
+
+    // Main method
+    public static void main(String[] args) {
+        
+        // Open input scanner
+        Scanner sc = new Scanner(System.in);
+    
+        // Print greeting
+        System.out.println("Welcome to the Phonebook Application");
+        System.out.println("------------------------------------\n");
+        
+        // Declare loop variable for while statement
+        boolean detailsLoop = true;
+        
+        // Declare menu option character
+        char choice = 'x';
+                           
+        // Contact option menu loop
+        while(detailsLoop == true) {
+            
+            // Print menu options
+            System.out.println("Please choose from one of these options:\n");
+            System.out.println("1. Add contact details");
+            System.out.println("2. View contact details");
+            System.out.println("3. Delete contact details");
+            System.out.println("4. Change contact details");
+            System.out.println("Enter any other character to end app\n");
+            System.out.print("Enter your selection: ");
+            
+            // Get option input
+            choice = sc.nextLine().charAt(0);
+            
+            // Switch statement to handle selections
+            switch(choice) {
+                
+            }
+        }
+        
+        System.out.println("\nThank you for using the phonebook app.");
+    }
+}
