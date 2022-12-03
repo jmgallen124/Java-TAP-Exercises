@@ -1,0 +1,93 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package JavaTAPProjects;    // Parent package
+
+import java.util.*;         // Import java utilities
+
+/**
+ *
+ * @author jmgal
+ */
+
+
+// Product class
+class Product {
+    // Product variables
+    String releaseYear;
+    String name;
+    double price;
+    
+    // Product constructor
+    Product(String releaseYear, String name, double price) {
+        this.releaseYear = releaseYear;
+        this.name = name;
+        this.price = price;
+    }
+}
+
+// Main class
+public class Products {
+
+    // Main method
+   public static void main(String[] args) {
+       
+       // Open scanner
+       Scanner sc = new Scanner(System.in);
+        
+       // Initialize Product ArrayList
+       ArrayList<Product> products = new ArrayList<Product>();
+       
+       // Add elements
+       products.add(new Product(
+                "2021",
+                "Shin Megami Tensei III: Nocturne HD Remaster",
+                28.99));
+       products.add(new Product(
+                "2022",
+                "Fire Emblem Warriors: Three Hopes",
+                27.99));
+       
+       products.add(new Product(
+                "2013",
+                "Dust: An Elysian Tail",
+                14.99));
+       
+       // Declare boolean and char
+       boolean menuLoop = true;
+       char selection;
+       
+       // Print opening message
+       System.out.println("==================");
+       System.out.println("= Gallen's Games =");
+       System.out.println("==================\n");
+              
+       while(menuLoop == true){
+           
+           System.out.print("Please choose one of these options: ");
+           selection = sc.next().charAt(0);
+           
+            switch(selection) {
+                case 'a':
+                case 'A':
+                    break;
+                case 'b':
+                case 'B':
+                    break;
+                case 'c':
+                case 'C':
+                    break;
+                default:
+                    System.out.println("Thank you for using this app.");
+                    menuLoop = false;
+            }
+       }
+       
+       // Close scanner
+       sc.close();
+       
+   }
+    
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

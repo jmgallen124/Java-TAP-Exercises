@@ -1,0 +1,19 @@
+// Operators class
+public class Operators {
+
+	// Main function to demonstrate operators.
+	public static void main(String[] args) {
+		
+		// Declare variables
+		int a = 38, b = 2, isum = 38 + 2, idiff = 38 - 2, 
+				iproduct = 38 * 2, iquot = 38 / 2, iremain = 38 %2;
+		double da = 0.07, db = 0.13, dsum = 0, ddiff = 0,
+				dproduct = 0, dquot = 0;
+		String str1 = "Jeremy", str2 = "Gallen";
+		
+		// Output math
+		System.out.println("The sum of a and b is: " + isum);
+
+	}
+
+}

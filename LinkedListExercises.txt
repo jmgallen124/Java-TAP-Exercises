@@ -1,0 +1,292 @@
+Exercise 1
+-----------
+
+// Import main package
+package LinkedListExercises;
+
+// Import functions
+import java.util.*;
+
+// Main class
+public class LinkedListExercise1 {
+
+    // Main method
+    public static void main(String[] args) {
+        
+        // Declare LinkedList
+        LinkedList<String> games = new LinkedList<String>();
+        
+        // Append items to LinkedList
+        games.add("Muramasa Rebirth");
+        games.add("Dust: An Elysian Tail");
+        games.add("Tails of Iron");
+        games.add("F.I.S.T.: Forged in Shadow Torch");
+        games.add("Devil Survivor 2: Record Breaker");
+        
+        // Output LinkedList
+        System.out.println(games);
+        
+        // Append item to end of LinkedList
+        games.addLast("Timespinner");
+        
+        // Output LinkedList again
+        System.out.println(games);        
+        
+    }
+    
+}
+
+Output
+------
+
+[Muramasa Rebirth, Dust: An Elysian Tail, Tails of Iron, F.I.S.T.: Forged in Shadow Torch, Devil Survivor 2: Record Breaker]
+[Muramasa Rebirth, Dust: An Elysian Tail, Tails of Iron, F.I.S.T.: Forged in Shadow Torch, Devil Survivor 2: Record Breaker, Timespinner]
+
+Exercise 2
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 3
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 4
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 5
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 6
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 7
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 8
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 9
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 10
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 11
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 12
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 13
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 14
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 15
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 16
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 17
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 18
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 19
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 20
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 21
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 22
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 23
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 24
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 25
+-----------
+
+
+
+Output
+------
+
+
+
+Exercise 26
+-----------
+
+
+
+Output
+------
+

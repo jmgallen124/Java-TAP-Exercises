@@ -1,0 +1,25 @@
+// Program to demonstrate if/else statement
+
+// Main class
+class IfElse {
+    
+    // Main function
+    public static void main(String[] args) {
+        
+        // Declare age variable
+        int age = 38;
+        
+        // If/else statement to print different statements with age
+        if (age <= 2) {
+            System.out.println("You are an infant.");
+        } else if (age <= 12) {
+            System.out.println("You are a child.");
+        } else if (age <= 19) {
+            System.out.println("You are an adolescent.");
+        } else if (age <= 54) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are a senior citizen.");
+        }
+    }
+}

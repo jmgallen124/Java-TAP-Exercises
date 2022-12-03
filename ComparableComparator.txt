@@ -1,0 +1,15 @@
+Comparable vs Comparator
+================================
+Both are used to do sorting of objects in java collection
+
+Comparable
+---------------------
+Used basically for single sorting sequence
+One needs to override compareTo()
+Belongs to java.lang package
+
+Comparator
+---------------------
+Used for multiple sorting sequence
+One needs to override compare()
+Belongs to java.util package

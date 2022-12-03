@@ -1,0 +1,398 @@
+package abstraction;
+
+public interface EmployeeManagement {
+	// Declare methods
+	public void addEmployee();
+	public void updateEmployee();
+	public void viewEmployee();
+}
+
+package abstraction;
+import java.util.Scanner;
+
+public class FullTimeEmployee implements EmployeeManagement {
+	// Class to implement full-time employee management
+	
+	// Open scanner
+	Scanner sc = new Scanner(System.in);
+	
+	// Private variables for employee attributes
+	private String name;
+	private String position;
+	private int ID;
+	private int salary;
+		
+	// Constructor for full-time employee
+	FullTimeEmployee(String name, String position, int ID, int salary) {
+		this.name = name;
+		this.position = position;
+		this.ID = ID;
+		this.salary = salary;
+	}
+	
+	// Add employee
+	@Override
+	public void addEmployee() {
+		// Get details
+		System.out.print("\nEnter employee's name (last/first) and position: ");
+		this.name = sc.nextLine();
+		this.position = sc.nextLine();
+		System.out.print("Enter employee's ID number: ");
+		this.ID = sc.nextInt();
+		System.out.print("Enter employee's salary: ");
+		this.salary = sc.nextInt();
+		
+		// Add employee and display
+		FullTimeEmployee fte = new FullTimeEmployee(name, position, ID, salary);
+		System.out.println("\nAdding full-time employee...");
+		fte.viewEmployee();
+	}
+	
+	@Override
+	public void updateEmployee() {
+		// Get details
+		System.out.print("\nEnter employee's name (last/first) and position: ");
+		this.name = sc.nextLine();
+		this.position = sc.nextLine();
+		System.out.print("Enter employee's ID number: ");
+		this.ID = sc.nextInt();
+		System.out.print("Enter employee's salary: ");
+		this.salary = sc.nextInt();
+		
+		// Update and view
+		System.out.println("\nUpdating employee information...");
+		this.viewEmployee();
+	}
+	
+	@Override
+	public void viewEmployee() {		
+		System.out.println("\nViewing employee information...");
+		System.out.println("Name:\t\t" + name);
+		System.out.println("Position:\t" + position);
+		System.out.println("ID:\t\t" + ID);
+		System.out.println("Salary:\t\t" + salary);		
+	}
+}
+
+package abstraction;
+import java.util.Scanner;
+
+public class PartTimeEmployee implements EmployeeManagement {
+	// Class to implement part-time employee management
+	
+	// Open scanner
+	Scanner sc = new Scanner(System.in);
+	
+	// Private variables for employee attributes
+	private String name;
+	private String position;
+	private int ID;
+	private int salary;
+	
+	// Constructor for part-time employee
+	PartTimeEmployee(String name, String position, int ID, int salary) {
+		this.name = name;
+		this.position = position;
+		this.ID = ID;
+		this.salary = salary;
+	}
+	
+	// Add employee
+	@Override
+	public void addEmployee() {
+		System.out.print("Please enter the employee's name (last, first): ");
+		this.name = sc.nextLine();
+		System.out.print("Please enter the employee's position: ");
+		this.position = sc.nextLine();
+		System.out.print("Please enter the employee's ID: ");
+		this.ID = sc.nextInt();
+		System.out.print("Please enter the employee's salary: ");
+		this.salary = sc.nextInt();
+		
+		// Instantiate part-time employee and display message
+		PartTimeEmployee pte = new PartTimeEmployee(name, position, ID, salary);
+		System.out.println("\nAdding part-time employee...");
+		pte.viewEmployee();
+	}
+	
+	@Override
+	public void updateEmployee() {
+		// Get details
+		System.out.print("\nEnter employee's name (last/first) and position: ");
+		this.name = sc.nextLine();
+		this.position = sc.nextLine();
+		System.out.print("Enter employee's ID number: ");
+		this.ID = sc.nextInt();
+		System.out.print("Enter employee's salary: ");
+		this.salary = sc.nextInt();
+		
+		// Update and view
+		System.out.println("\nUpdating employee information...");
+		this.viewEmployee();
+	}
+	
+	@Override
+	public void viewEmployee() {
+		System.out.println("\nViewing employee information...");
+		System.out.println("Name:\t\t" + name);
+		System.out.println("Position:\t" + position);
+		System.out.println("ID:\t\t" + ID);
+		System.out.println("Salary:\t\t" + salary);
+	}
+}
+
+package abstraction;
+import java.util.Scanner;
+
+public class ContractEmployee implements EmployeeManagement {
+	// Class to implement full-time employee management
+	
+	// Open scanner
+	Scanner sc = new Scanner(System.in);
+	
+	// Private variables for employee attributes
+	private String name;
+	private String position;
+	private int ID;
+	private int salary;	
+	
+	// Constructor for contract employee
+	ContractEmployee(String name, String position, int ID, int salary) {
+		this.name = name;
+		this.position = position;
+		this.ID = ID;
+		this.salary = salary;	
+	}
+	
+	// Add employee
+	@Override
+	public void addEmployee() {
+		// Ask for input
+		System.out.print("Please enter the employee's name, (last, first) and position: ");
+		this.name = sc.nextLine();
+		this.position = sc.nextLine();
+		System.out.print("Please enter the employee's ID: ");
+		this.ID = sc.nextInt();
+		System.out.print("Please enter the employee's salary: ");
+		this.salary = sc.nextInt();
+		
+		// Instantiate employee, output messages and details
+		ContractEmployee ce = new ContractEmployee(name, position, ID, salary);
+		System.out.println("\nAdding contract employee...");
+		ce.viewEmployee();
+	}
+	
+	@Override
+	public void updateEmployee() {
+		// Get details
+		System.out.print("\nEnter employee's name (last/first) and position: ");
+		this.name = sc.nextLine();
+		this.position = sc.nextLine();
+		System.out.print("Enter employee's ID number: ");
+		this.ID = sc.nextInt();
+		System.out.print("Enter employee's salary: ");
+		this.salary = sc.nextInt();
+		
+		// Update and view
+		System.out.println("\nUpdating employee information...");
+		this.viewEmployee();
+	}
+	
+	@Override
+	public void viewEmployee() {
+		System.out.println("\nViewing employee information...");
+		System.out.println("ID:\t\t" + ID);
+		System.out.println("Name:\t\t" + name);
+		System.out.println("Salary\t\t" + salary);
+		System.out.println("Position:\t" + position);
+	}
+}
+
+package abstraction;
+import java.util.Scanner;
+
+public class GallenInc {
+	
+	// Open scanner
+	static Scanner sc = new Scanner(System.in);
+	
+	// Method to print opening
+	public static void printGreeting() {
+		System.out.println("*******************************");
+		System.out.println("*** Welcome to Gallen, Inc! ***");
+		System.out.println("*******************************");
+	}
+	
+	// Method to print main menu options
+	public static void printMainMenuOptions() {
+		System.out.println("\nPlease choose the type of employee:");
+		System.out.println("1. Full-Time");
+		System.out.println("2. Part-Time");
+		System.out.println("3. Contract");
+		System.out.println("4. Quit");
+		System.out.print("Enter your selection: ");
+	}
+	
+	// Method to print employee options
+	public static void printEmployeeOptions() {
+		System.out.println("\nWhat would you like to do with the employee?");
+		System.out.println("1. Add employee");
+		System.out.println("2. Update employee");
+		System.out.println("3. View employee");
+		System.out.println("4. Back to main menu");
+		System.out.print("Please make your selection: ");
+	}
+	
+	// Method for full-time employees
+	public static void fullTime() {
+		// Declare interface object
+		FullTimeEmployee fte = new FullTimeEmployee("Gallen, Jeremy", "Coder", 240888, 50000);
+		
+		// Get selection
+		int select = 0;
+		
+		// do/while loop to loop until user quits
+		do {
+			// Print employee options
+			printEmployeeOptions();	
+			
+			// Ask for selection
+			select = sc.nextInt();
+					
+			// Switch statement to process selection
+			switch(select) {
+			case 1:
+				fte.addEmployee();
+				break;
+			case 2:
+				fte.updateEmployee();
+				break;
+			case 3:
+				fte.viewEmployee();
+				break;
+			case 4:
+				break;
+			default:
+				System.out.print("\nInvalid selection. Please try again: ");
+			}
+			
+		// Close of do/while
+		} while(select != 4);
+	}
+	
+	// Method for part-time employees
+	public static void partTime() {
+		// Declare interface object
+		PartTimeEmployee pte = new PartTimeEmployee("Gallen, Jeremy", "Coder", 240888, 40000);
+		
+		// Declare select variable
+		int select = 0;
+		
+		// do/while loop to loop until user quits
+		do {
+			// Print employee options
+			printEmployeeOptions();	
+			
+			// Ask for selection
+			select = sc.nextInt();
+					
+			// Switch statement to process selection
+			switch(select) {
+			case 1:
+				pte.addEmployee();
+				break;
+			case 2:
+				pte.updateEmployee();
+				break;
+			case 3:
+				pte.viewEmployee();
+				break;
+			case 4:
+				break;
+			default:
+				System.out.print("\nInvalid selection. Please try again: ");
+			}
+			
+			// Close of do/while
+		} while(select != 4);
+		
+	}
+	
+	// Method for contract employees
+	public static void contract() {
+		// Declare interface object
+		ContractEmployee ce = new ContractEmployee("Gallen, Jeremy", "Coder", 240888, 40000);
+				
+		// Declare select variable
+		int select = 0;
+		
+		// do/while loop to loop until user quits
+		do {
+			// Print employee options
+			printEmployeeOptions();	
+			
+			// Get selection
+			select = sc.nextInt();
+					
+			// Switch statement to process selection
+			switch(select) {
+			case 1:
+				ce.addEmployee();
+				break;
+			case 2:
+				ce.updateEmployee();
+				break;
+			case 3:
+				ce.viewEmployee();
+				break;
+			case 4:
+				break;
+			default:
+				System.out.print("\nInvalid selection. Please try again: ");
+			}
+			
+		// Close of do/while
+		} while(select != 4);
+	}
+		
+	public static void main(String[] args) {
+		
+		// Print greeting
+		printGreeting();
+		
+		// Declare choice variable
+		int select = 0;
+		
+		// do/while loop to loop until user quits
+		do {
+			// Print employee options and get selection
+			printMainMenuOptions();
+			select = sc.nextInt(); 
+			
+			// Switch statement to process selection
+			switch(select) {
+			case 1:
+				fullTime();
+				break;
+			case 2:
+				partTime();
+				break;
+			case 3:
+				contract();
+				break;
+			case 4:
+				break;
+			default:
+				System.out.print("\nInvalid selection. Please try again: ");
+			}
+			
+		// Close of do/while
+		} while(select != 4);
+		
+		// Output closing message
+		System.out.println("\nThank you for using Gallen, Inc's employee app.");
+		
+		// Close scanner
+		sc.close();
+	}
+}

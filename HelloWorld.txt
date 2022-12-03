@@ -1,0 +1,12 @@
+// Program to demonstrate basic output in Java
+
+// Main class
+class HelloWorld {
+    
+    // Main function
+    public static void main(String[] args) {
+        
+        // Print "Hello, world!"
+        System.out.println("Hello, world!");
+    }
+}

@@ -1,0 +1,643 @@
+Exercise 1
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise1 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> colors = new ArrayList<String>();
+		
+		colors.add("purple");
+		colors.add("lavender");
+		colors.add("magenta");
+		colors.add("violet");
+		colors.add("pink");
+		
+		System.out.print(colors);
+
+	}
+
+}
+
+Exercise 2
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise2 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> authors = new ArrayList<String>();
+		
+		authors.add("Terry Goodkind");
+		authors.add("C.S. Lewis");
+		authors.add("J.R.R. Tolkien");
+		authors.add("Terry Brooks");
+		authors.add("J.K. Rowling");
+		authors.add("Brian Jacques");
+		
+		for(String author:authors) {
+			System.out.println(author);
+		}
+	}
+
+}
+
+Exercise 3
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise3 {
+
+	public static void main(String[] args) {
+	
+		ArrayList<String> pets = new ArrayList<String>();
+		
+		pets.add("dog");
+		pets.add("cat");
+		pets.add("hamster");
+		pets.add("gerbil");
+		
+		System.out.println(pets);
+		
+		pets.add(0, "skunk");
+		
+		System.out.println(pets);
+		
+	}
+
+}
+
+Exercise 4
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise4 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		games.add("Muramasa Rebirth");
+		games.add("Devil Survivor 2: Record Breaker");
+		games.add("TimeSpinner");
+		games.add("F.I.S.T.: Forged in Shadow Torch");
+		games.add("Dust: An Elysian Tail");
+		
+		System.out.println(games.get(0));
+		
+	}
+
+}
+
+Exercise 5
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise5 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		games.add("Muramasa Rebirth");
+		games.add("Devil Survivor 2: Record Breaker");
+		games.add("TimeSpinner");
+		games.add("F.I.S.T.: Forged in Shadow Torch");
+		games.add("Dust: An Elysian Tail");
+
+		System.out.println(games);
+		
+		games.set(3, "Dragon Quest XI: Echoes of an Elusive Age");
+		
+		System.out.println(games);
+	}
+
+}
+
+Exercise 6
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise6 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Shin Megami Tensei III: Nocturne");
+		games.add("Persona 5 Royal");
+		games.add("Beyond the Beyond");
+		games.add("Soul Hackers 2");
+		games.add("Devil Survivor 2: Record Breaker");
+		
+		System.out.println(games);
+		
+		games.remove(2);
+		
+		System.out.println(games);
+
+	}
+
+}
+
+Exercise 7
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise7 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Shin Megami Tensei III: Nocturne");
+		games.add("Persona 5 Royal");
+		games.add("Beyond the Beyond");
+		games.add("Soul Hackers 2");
+		games.add("Devil Survivor 2: Record Breaker");
+		
+		int index1 = games.indexOf("Persona 5 Royal");
+		int index2 = games.indexOf("Dust: An Elysian Tail");
+		
+		if(index1 == -1) {
+			System.out.println("Persona 5 Royal not found in ArrayList.");
+		} else {
+			System.out.println("Persona 5 Royal is a great game.");
+		}
+		
+		if(index2 == -1) {
+			System.out.println("Dust: An Elysian Tail not found in ArrayList.");
+		} else {
+			System.out.println("Dust: An Elysian Tail is another great game.");
+		}
+	}
+
+}
+
+Exercise 8
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise8 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+		
+		System.out.println(games);
+		
+		games.sort(null);
+		
+		System.out.println(games);
+	}
+
+}
+
+Exercise 9
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise9 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games1 = new ArrayList<String>();
+		
+		games1.add("Xenosaga");
+		games1.add("Arc the Lad");
+		games1.add("Shin Megami Tensei");
+		games1.add("Mario");
+		games1.add("Suikoden");
+		
+		ArrayList<String> games2 = new ArrayList<String>();
+		
+		for(String game:games1) {
+			games2.add(game);
+		}
+		
+		System.out.println(games2);
+
+	}
+
+}
+
+Exercise 10
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListExercise10 {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+
+		System.out.println(games);
+		
+		Collections.shuffle(games);
+		
+		System.out.println(games);
+	}
+
+}
+
+Exercise 11
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListExercise11 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+
+		System.out.println(games);
+		
+		Collections.reverse(games);
+		
+		System.out.println(games);
+
+	}
+
+}
+
+Exercise 12
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise12 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+
+		System.out.println(games);
+
+		ArrayList<String> gamesSubList = new ArrayList<String>(games.subList(0, 3));
+		
+		System.out.println(gamesSubList);
+	}
+
+}
+
+
+Exercise 13
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise13 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games1 = new ArrayList<String>();
+		ArrayList<String> games2 = new ArrayList<String>();
+		
+		games1.add("Xenosaga");
+		games1.add("Arc the Lad");
+		games1.add("Shin Megami Tensei");
+		games1.add("Mario");
+		games1.add("Suikoden");
+		
+		games2.add("Soulsborne");
+		games2.add("Lunar");
+		games2.add("Persona");
+		games2.add("Etrian Odyssey");
+		games2.add("Fire Emblem");
+		
+		System.out.println(games1);
+		System.out.println(games2);
+		
+		String message = (games1.equals(games2)) ? "Both lists have the same contents." : "Both lists have different contents";
+		
+		System.out.println(message);
+	}
+
+}
+
+Exercise 14
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListExercise14 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+
+		System.out.println(games);
+		
+		Collections.swap(games, 2, 3);
+		
+		System.out.println(games);
+	}
+
+}
+
+Exercise 15
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise15 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games1 = new ArrayList<String>();
+		ArrayList<String> games2 = new ArrayList<String>();
+		
+		games1.add("Xenosaga");
+		games1.add("Arc the Lad");
+		games1.add("Shin Megami Tensei");
+		games1.add("Mario");
+		games1.add("Suikoden");
+		
+		games2.add("Soulsborne");
+		games2.add("Lunar");
+		games2.add("Persona");
+		games2.add("Etrian Odyssey");
+		games2.add("Fire Emblem");
+		
+		System.out.println(games1);
+		
+		games1.addAll(games2);
+		
+		System.out.println(games1);
+
+	}
+
+}
+
+Exercise 16
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise16 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games1 = new ArrayList<String>();
+		ArrayList<String> games2 = new ArrayList<String>();
+		
+		games1.add("Xenosaga");
+		games1.add("Arc the Lad");
+		games1.add("Shin Megami Tensei");
+		games1.add("Mario");
+		games1.add("Suikoden");
+		
+		games2 = (ArrayList)games1.clone();
+		
+		System.out.println(games1);
+		System.out.println(games2);
+
+	}
+
+}
+
+Exercise 17
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise17 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+		
+		System.out.println(games);
+		
+		games.clear();
+		
+		System.out.println(games);
+
+	}
+
+}
+
+Exercise 18
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise18 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+		
+		String message = games.isEmpty() ? "The list is empty." : "The list is not empty.";
+		
+		System.out.println(message);
+	}
+
+}
+
+Exercise 19
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise19 {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.trimToSize();
+		
+		System.out.println(games.size());
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+		
+		System.out.println(games.size());
+		
+		games.trimToSize();
+		
+		System.out.println(games.size());
+		
+	}
+
+}
+
+Exercise 20
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise20 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		System.out.println(games.size());
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+		
+		games.ensureCapacity(10);
+		
+		System.out.println(games.size());
+
+	}
+
+}
+
+Exercise 21
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise21 {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+		
+		System.out.println(games);
+
+		games.set(3, "Zelda");
+		
+		System.out.println(games);
+	}
+}
+
+Exercise 22
+====================
+
+package arraylistexercises;
+
+import java.util.ArrayList;
+
+public class ArrayListExercise22 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> games = new ArrayList<String>();
+		
+		games.add("Xenosaga");
+		games.add("Arc the Lad");
+		games.add("Shin Megami Tensei");
+		games.add("Mario");
+		games.add("Suikoden");
+		
+		for(int i = 0; i < games.size(); i++)
+			System.out.println(games.get(i));
+
+	}
+
+}
